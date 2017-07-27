@@ -17,6 +17,8 @@ Consider a website that generates 2 types of events:
 
 
 
+
+
 Task:
 
 
@@ -32,8 +34,9 @@ Create a small CLI dashboard, that on each 10 seconds will display:
 - average time a user spends on the site (optional)
 
 
-Notes:
 
+
+Notes:
 
 
   - a user can login and log out at any time
@@ -50,6 +53,8 @@ Notes:
  
 
 
+
+
 Implementation details:
 
 
@@ -58,6 +63,7 @@ Implementation details:
   - only JDK 8 classes are allowed to be used in the implementation
 
   - the format of the output (dashboard) should be simple text
+
 
 
 
