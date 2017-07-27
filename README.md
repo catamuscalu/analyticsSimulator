@@ -48,6 +48,8 @@ Notes:
   - the user logged out event has 3 fields: timestamp, user_id, session_id
 
   - the session_id identifies a specific user session on the site and is unique
+  
+  - think of a simple implementation that should not take more than a couple of hours to complete, in the "production-ready" philosophy
 
 
  
