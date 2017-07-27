@@ -1,11 +1,6 @@
 # analyticsSimulator
 Simple realtime analytics simulator
 
--------------------------
-
-Realtime Analytics System Simulator
-
--------------------------
 
  
 
