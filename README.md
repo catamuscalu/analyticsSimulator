@@ -27,14 +27,13 @@ Design a system that in realtime can extract statistics about the users of the s
 
 Create a small CLI dashboard, that on each 10 seconds will display:
 
-- average number of users
+- number of users connected (unique user_id)
 
-- number of unique users
+- number of active sessions (unique session_id)
 
-- average time a user spends on the site (optional)
+- number of login events from beginning of simulation
 
-
-
+- average session duration
 
 Notes:
 
@@ -67,7 +66,6 @@ Implementation details:
   - the format of the output (dashboard) should be simple text
   
   - account for an optimal speed of ingestion from multiple sources of data
-
 
 
 
