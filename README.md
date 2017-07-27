@@ -63,6 +63,8 @@ Implementation details:
   - only JDK 8 classes are allowed to be used in the implementation
 
   - the format of the output (dashboard) should be simple text
+  
+  - account for an optimal speed of ingestion from multiple sources of data
 
 
 
