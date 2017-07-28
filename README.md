@@ -66,6 +66,7 @@ Implementation details:
   - the format of the output (dashboard) should be simple text
   
   - account for an optimal speed of ingestion from multiple sources of data
+  - use the given simulation-input.csv input to test your simulation, considering that the test data has the following format: offset in seconds since start of simulation, event type, user_id, session_id
 
 
 
