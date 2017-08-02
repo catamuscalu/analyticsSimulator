@@ -8,32 +8,23 @@ Simple realtime analytics simulator
 Scenario:
 
 
-
-Consider a website that generates 2 types of events:
-
-  - user logged in
-
-  - user logged out
-
-
+Consider a website that receives 2 types of events (user login and user logout) and needs a realtime analytics system that can emit several statistics about the website traffic.
 
 
 
 Task:
 
+How would you design such a system, given that you need to output the following metrics about the website traffic in 10 seconds windows:
+
+- number of unique users connected (unique user_id)
+
+- average user session duration
+
+At the end of the exercise, display the number of unique users since the beginnning of the simulation.
+
+Consider offering a CLI dashboard that can emit these metrics each 10 seconds.
 
 
-Design a system that in realtime can extract statistics about the users of the site.
-
-Create a small CLI dashboard, that on each 10 seconds will display:
-
-- number of users connected (unique user_id)
-
-- number of active sessions (unique session_id)
-
-- number of login events from beginning of simulation
-
-- average session duration
 
 Notes:
 
@@ -42,16 +33,11 @@ Notes:
 
   - the order of the events is always logged in, logged out
 
-  - the user logged in event has 3 fields: timestamp, user_id, session_id
+  - the generated events have 4 fields and the following format: timestamp, event_type, user_id, session_id
 
-  - the user logged out event has 3 fields: timestamp, user_id, session_id
-
-  - the session_id identifies a specific user session on the site and is unique
+  - the session_id identifies a specific user session on the site and is unique. A given user_id can generate one or more session_ids.
   
   - think of a simple implementation that should not take more than a couple of hours to complete, in the "production-ready" philosophy
-
-
- 
 
 
 
@@ -67,6 +53,7 @@ Implementation details:
   
   - account for an optimal speed of ingestion from multiple sources of data
   - use the given simulation-input.csv input to test your simulation, considering that the test data has the following format: offset in seconds since start of simulation, event type, user_id, session_id
+  - for receiving the website events, start the provided library that can be configured to output events in a given local directory. The simulation is successful if you can consume the events at the pace at which they are generated ( consider that you might also encounter spike periods ).
 
 
 
