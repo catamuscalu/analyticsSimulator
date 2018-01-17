@@ -8,7 +8,7 @@ Simple realtime analytics simulator
 Scenario:
 
 
-Consider a website that receives 2 types of events (user login and user logout) and needs a realtime analytics system that can emit several statistics about the website traffic.
+Given a website that receives 2 types of events (user login and user logout), this one needs a realtime analytics system that can emit several statistics about the website traffic.
 
 
 
@@ -47,8 +47,6 @@ Implementation details:
 
   - the system should be written as a simulation
 
-  - only JDK 8 classes are allowed to be used in the implementation
-
   - the format of the output (dashboard) should be simple text
   
   - account for an optimal speed of ingestion from multiple sources of data
@@ -61,5 +59,6 @@ Implementation details:
 Deliverable:
 
 
-  - a Java 8 command line application that simulates the website events and prints on the console the specified statistics
+  - a Java command line application that simulates the website events and prints on the console the specified statistics
 
+  - Java compliance level required :  JDK 8
