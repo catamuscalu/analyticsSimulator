@@ -8,7 +8,7 @@ Simple realtime analytics simulator
 Scenario:
 
 
-Given a website that receives 2 types of events (user login and user logout), this one needs a realtime analytics system that can emit several statistics about the website traffic.
+Given a website that produces 2 types of events (user login and user logout), this one needs a realtime analytics system that can emit several statistics about the website traffic.
 
 
 
