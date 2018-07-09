@@ -51,14 +51,12 @@ Implementation details:
   
   - account for an optimal speed of ingestion from multiple sources of data
   - use the given simulation-input.csv input to test your simulation, considering that the test data has the following format: offset in seconds since start of simulation, event type, user_id, session_id
-  - for receiving the website events, start the provided library that can be configured to output events in a given local directory. The simulation is successful if you can consume the events at the pace at which they are generated ( consider that you might also encounter spike periods ).
-
-
+  
 
 
 Deliverable:
 
 
-  - a Java command line application that simulates the website events and prints on the console the specified statistics
+  - a Java command line application that consumes the website events and prints on the console the specified statistics
 
   - Java compliance level required :  JDK 8
