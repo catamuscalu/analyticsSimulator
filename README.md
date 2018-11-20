@@ -14,7 +14,7 @@ Given a website that produces 2 types of events (user login and user logout), th
 
 Task:
 
-How would you design such a system, given that you need to output the following metrics about the website traffic in 10 seconds windows:
+How would you design such a system, given that you need to output the following metrics about the active website traffic at the end of 10 seconds windows:
 
 - number of unique users connected (unique user_id)
 
@@ -22,7 +22,7 @@ How would you design such a system, given that you need to output the following 
 
 At the end of the exercise, display the number of unique users since the beginnning of the simulation.
 
-Consider offering a CLI dashboard that can emit these metrics each 10 seconds.
+Consider offering a CLI dashboard that can emit these metrics each 10 seconds using the least memory.
 
 
 
@@ -50,6 +50,7 @@ Implementation details:
   - the format of the output (dashboard) should be simple text
   
   - account for an optimal speed of ingestion from multiple sources of data
+  
   - use the given simulation-input.csv input to test your simulation, considering that the test data has the following format: offset in seconds since start of simulation, event type, user_id, session_id
   
 
