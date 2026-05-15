@@ -60,4 +60,4 @@ Deliverable:
 
   - a Java command line application that consumes the website events and prints on the console the specified statistics
 
-  - Java compliance level required :  JDK 8
+  - Java compliance level required :  JDK 11+
